@@ -1,0 +1,152 @@
+/* Define estilos básicos para todos os elementos, incluindo pseudo-elementos ::after e ::before */
+*, *::after, *::before {
+    padding: 0; /* Remove o padding de todos os elementos */
+    margin: 0; /* Remove o margin de todos os elementos */
+    box-sizing: border-box; /* Inclui o padding e a borda no cálculo da largura e altura */
+}
+
+/* Define a fonte padrão para o corpo da página */
+body {
+    font-family: sans-serif; /* Usa uma fonte sem serifa para o texto do corpo */
+}
+
+/* Define o estilo do container principal */
+.container {
+    display: flex; /* Usa o layout flexível para os elementos filhos */
+    justify-content: center; /* Centraliza os elementos horizontalmente */
+    align-items: center; /* Centraliza os elementos verticalmente */
+    width: 100%; /* Define a largura como 100% do elemento pai */
+    height: 100vh; /* Define a altura como 100% da altura da viewport */
+    background-image: url(https://cdn.pixabay.com/photo/2024/07/10/17/54/ai-generated-8886467_1280.png); /* Define a imagem de fundo */
+    background-position: center center; /* Centraliza a imagem de fundo */
+    background-size: cover; /* Faz com que a imagem cubra todo o container */
+    background-repeat: no-repeat; /* Impede que a imagem de fundo se repita */
+}
+
+/* Define o estilo da caixa de login */
+.box_login {
+    display: flex; /* Usa o layout flexível para os elementos filhos */
+    flex-direction: column; /* Alinha os elementos em uma coluna */
+    justify-content: center; /* Centraliza os elementos verticalmente */
+    align-items: center; /* Centraliza os elementos horizontalmente */
+    width: 400px; /* Define a largura da caixa */
+    height: 460px; /* Define a altura da caixa */
+    padding: 50px; /* Adiciona espaçamento interno */
+    border-radius: 10px; /* Adiciona bordas arredondadas */
+    text-align: center; /* Centraliza o texto */
+    border: 2px solid rgba(255, 255, 255, .2); /* Adiciona uma borda sutil com cor semitransparente */
+    backdrop-filter: blur(5px); /* Adiciona um efeito de desfoque ao fundo da caixa */
+}
+
+/* Define o estilo do título dentro da caixa de login */
+.box_login .title {
+    color: #fff; /* Define a cor do texto como branco */
+    font-size: 24px; /* Define o tamanho da fonte */
+    text-shadow: 0 0 10px rgba(0, 0, 0, .5); /* Adiciona uma sombra ao texto para melhorar a legibilidade */
+}
+
+/* Define o estilo do formulário dentro da caixa de login */
+.box_login form {
+    display: flex; /* Usa o layout flexível para os elementos filhos */
+    flex-direction: column; /* Alinha os elementos em uma coluna */
+    align-items: center; /* Centraliza os elementos horizontalmente */
+    width: 100%; /* Define a largura como 100% do elemento pai */
+    margin-top: 32px; /* Adiciona margem no topo do formulário */
+}
+
+/* Define o estilo dos campos de entrada dentro do formulário */
+.box_login input {
+    outline: none; /* Remove o contorno padrão dos campos de entrada */
+    background-color: transparent; /* Define o fundo como transparente */
+    color: #fff; /* Define a cor do texto como branco */
+    width: 100%; /* Define a largura como 100% do elemento pai */
+    height: 48px; /* Define a altura dos campos de entrada */
+    border: 2px solid rgba(255, 255, 255, .2); /* Adiciona uma borda sutil com cor semitransparente */
+    border-radius: 10px; /* Adiciona bordas arredondadas */
+    padding-left: 16px; /* Adiciona espaçamento interno à esquerda */
+    font-size: 14px; /* Define o tamanho da fonte */
+    margin-bottom: 16px; /* Adiciona margem na parte inferior dos campos de entrada */
+}
+
+/* Define o estilo dos campos de entrada quando estão em foco */
+.box_login input:focus {
+    border: 2px solid rgba(255, 255, 255, .3); /* Escurece a borda quando o campo está em foco */
+}
+
+/* Define a cor dos placeholders dos campos de entrada */
+.box_login input::placeholder {
+    color: #ccc; /* Define a cor dos placeholders como cinza claro */
+}
+
+/* Define o estilo do botão dentro da caixa de login */
+.box_login button {
+    border: none; /* Remove a borda padrão do botão */
+    outline: none; /* Remove o contorno padrão do botão */
+    width: 100%; /* Define a largura como 100% do elemento pai */
+    height: 48px; /* Define a altura do botão */
+    font-size: 18px; /* Define o tamanho da fonte */
+    font-weight: bold; /* Define o peso da fonte como negrito */
+    background-color: #1e90ff; /* Define a cor de fundo do botão */
+    color: #fff; /* Define a cor do texto do botão como branco */
+    border-radius: 10px; /* Adiciona bordas arredondadas */
+    cursor: pointer; /* Define o cursor como pointer para indicar que é clicável */
+}
+
+/* Define o estilo do botão quando o mouse passa sobre ele */
+.box_login button:hover {
+    background-color: #167ee6; /* Escurece a cor de fundo quando o botão é sobrevoado */
+}
+
+/* Define o estilo do divisor dentro da caixa de login */
+.box_login .divider {
+    display: block; /* Exibe o divisor como um bloco */
+    width: 80%; /* Define a largura do divisor */
+    height: 1px; /* Define a altura do divisor */
+    background-color: #fff; /* Define a cor de fundo do divisor como branco */
+    margin-top: 32px; /* Adiciona margem no topo do divisor */
+    margin-bottom: 32px; /* Adiciona margem na parte inferior do divisor */
+    opacity: .2; /* Define a opacidade do divisor */
+}
+
+/* Define o estilo dos links dentro da caixa de login */
+.box_login a {
+    font-size: 16px; /* Define o tamanho da fonte */
+    color: #fff; /* Define a cor do texto como branco */
+    text-decoration: none; /* Remove o sublinhado dos links */
+}
+
+/* Define o estilo dos links quando o mouse passa sobre eles */
+.box_login a:hover {
+    text-decoration: underline; /* Adiciona um sublinhado aos links quando o botão do mouse está sobre eles */
+}
+
+/* Estilos específicos para telas menores que 600px */
+@media (max-width: 600px) {
+    .box_login {
+        width: 90%; /* Define a largura da caixa como 90% do elemento pai */
+        padding: 20px; /* Adiciona espaçamento interno menor */
+        height: auto; /* Define a altura como automática para se ajustar ao conteúdo */
+    }
+    .box_login input, .box_login button {
+        height: 40px; /* Define a altura dos campos de entrada e botão como 40px */
+        font-size: 16px; /* Define o tamanho da fonte dos campos de entrada e botão */
+    }
+}
+
+/* Estilos específicos para telas menores que 600px */
+@media (max-width: 600px) {
+    .box_login .title {
+        font-size: 20px; /* Define o tamanho da fonte do título como 20px */
+    }
+    .box_login input::placeholder {
+        font-size: 12px; /* Define o tamanho da fonte dos placeholders como 12px */
+    }
+}
+
+/* Define o estilo da mensagem de erro ou sucesso */
+#message {
+    margin-top: 16px; /* Adiciona margem no topo */
+    color: #fff; /* Define a cor do texto como branco */
+    font-size: 14px; /* Define o tamanho da fonte */
+    text-shadow: 0 0 5px rgba(0, 0, 0, .5); /* Adiciona uma sombra ao texto para melhorar a legibilidade */
+}

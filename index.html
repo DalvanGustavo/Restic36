@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!-- Define o tipo de documento como HTML5 -->
+<html lang="pt-BR">
+<!-- Inicia o elemento HTML e define o idioma como português do Brasil -->
+<head>
+    <!-- Inicia a seção de cabeçalho do documento -->
+    <meta charset="UTF-8">
+    <!-- Define a codificação de caracteres para UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Define a configuração da viewport para tornar o site responsivo em dispositivos móveis -->
+    <title>Login</title>
+    <!-- Define o título da página, que aparece na aba do navegador -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Link para o arquivo CSS externo para estilizar a página -->
+</head> 
+<body>
+    <!-- Inicia o corpo da página -->
+
+    <div class="container">
+        <!-- Cria um contêiner para centralizar o conteúdo -->
+
+        <div class="box_login">
+            <!-- Cria uma caixa de login com estilo -->
+            <h1 class="title">Entrar no Sistema</h1>
+            <!-- Define o título principal dentro da caixa de login -->
+            <form action="javascript:;" method="post">
+                <!-- Define o formulário; a ação é um JavaScript vazio para evitar o envio real -->
+                <input type="email" name="email" placeholder="Usuário">
+                <!-- Campo de entrada para o e-mail do usuário -->
+                <input type="password" name="senha" placeholder="Senha">
+                <!-- Campo de entrada para a senha do usuário -->
+                <button type="submit">Entrar</button>
+                <!-- Botão de envio do formulário -->
+                <div id="message"></div>
+                <!-- Div para mostrar mensagens de erro ou sucesso -->
+            </form>
+        </div>
+
+    </div>
+
+    <div class="wrapper">
+        <!-- Cria um contêiner adicional -->
+        <h1 id="title"></h1>
+        <!-- Título adicional (não utilizado no código fornecido) -->
+    </div>
+
+    <script src="dist/script.js"></script>
+    <!-- Link para o arquivo JavaScript externo para adicionar funcionalidade à página -->
+</body>
+</html>
