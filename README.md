@@ -10,21 +10,21 @@ Este é um sistema simples de login desenvolvido para demonstrar o uso de HTML, 
 
    Se estiver utilizando TypeScript, instale as dependências necessárias (como o TypeScript):
 
-   ```bash
+ 
    npm install typescript --save-dev
 
 2. **Compile o Código TypeScript**
 
   Compile o código TypeScript para JavaScript:
 
-  Abrir o Terminal e digitar:   ```bash npx tsc
+  Abrir o Terminal e digitar:    npx tsc
 
 3. **Abrir o Arquivo index.html**
 
   Abra o arquivo 'index.html' em um navegador de sua escolha:
 
-  Abrir o Terminal e digitar:  ```bash open index.html ou  
-  ```bash start index.html
+  Abrir o Terminal e digitar:  open index.html ou  
+   start index.html
 
   Ou simplesmente abra o arquivo 'index.html' diretamente no navegador.
 
