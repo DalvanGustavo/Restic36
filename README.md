@@ -17,13 +17,14 @@ Este é um sistema simples de login desenvolvido para demonstrar o uso de HTML, 
 
   Compile o código TypeScript para JavaScript:
 
-  Abrir o Terminal e digitar:  npx tsc
+  Abrir o Terminal e digitar:   ```bash npx tsc
 
 3. **Abrir o Arquivo index.html**
 
   Abra o arquivo 'index.html' em um navegador de sua escolha:
 
-  Abrir o Terminal e digitar:  open index.html ou start index.html
+  Abrir o Terminal e digitar:  ```bash open index.html ou  
+  ```bash start index.html
 
   Ou simplesmente abra o arquivo 'index.html' diretamente no navegador.
 
@@ -38,4 +39,6 @@ TypeScript: Para adicionar a lógica de validação de login e manipulação do 
 Internacionalização: Adicionar suporte para múltiplos idiomas.
 
 Segurança: Implementar um sistema de autenticação mais seguro e usar um backend para validar credenciais.
+
+
 
